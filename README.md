@@ -1,4 +1,4 @@
-# 《Redis 4.x Cookbook》Learning Notes
+# 《Elasticsearch 7 Quick Start Guide》Learning Notes
 
 
 
@@ -6,17 +6,19 @@
 
 ![Redis 4.x Cookbook](assets/cover.png)
 
-|    **Title**    | **Redis 4.x Cookbook** [ISBN: 9781783988167] |
-| :-------------: | :----------------------------------------------------------: |
-|   **Author**    |               **Pengcheng Huang, Zuofei Wang**               |
-| **Publication** |                      **Packt, 2018.2**                       |
-|    **Pages**    |                           **374**                            |
+|    **Title**    | **Elasticsearch 7 Quick Start Guide** [ISBN: 9781789803327] |
+| :-------------: | :---------------------------------------------------------: |
+|   **Author**    |            **Anurag Srivastava, Douglas Miller**            |
+| **Publication** |                     **Packt, 2019.10**                      |
+|    **Pages**    |                           **176**                           |
 
 > **Introduction**
 >
-> Redis is considered the world's most popular key-value store database. Its versatility and the wide variety of use cases it enables have made it a popular choice of database for many enterprises. Based on the latest version of Redis, this book provides both step-by-step recipes and relevant the background information required to utilize its features to the fullest. It covers everything from a basic understanding of Redis data types to advanced aspects of Redis high availability, clustering, administration, and troubleshooting. This book will be your great companion to master all aspects of Redis.
+> Elasticsearch is one of the most popular tools for distributed search and analytics. This Elasticsearch book highlights the latest features of Elasticsearch 7 and helps you understand how you can use them to build your own search applications with ease.
 >
-> The book starts off by installing and configuring Redis for you to get started with ease. Moving on, all the data types and features of Redis are introduced in detail. Next, you will learn how to develop applications with Redis in Java, Python, and the Spring Boot web framework. You will also learn replication tasks, which will help you to troubleshoot replication issues. Furthermore, you will learn the steps that need to be undertaken to ensure high availability on your cluster and during production deployment. Toward the end of the book, you will learn the topmost tasks that will help you to troubleshoot your ecosystem efficiently, along with extending Redis by using different modules.
+> Starting with an introduction to the Elastic Stack, this book will help you quickly get up to speed with using Elasticsearch. You'll learn how to install, configure, manage, secure, and deploy Elasticsearch clusters, as well as how to use your deployment to develop powerful search and analytics solutions. As you progress, you'll also understand how to troubleshoot any issues that you may encounter along the way. Finally, the book will help you explore the inner workings of Elasticsearch and gain insights into queries, analyzers, mappings, and aggregations as you learn to work with search results.
+>
+> By the end of this book, you'll have a basic understanding of how to build and deploy effective search and analytics solutions using Elasticsearch.
 
 
 
@@ -26,17 +28,22 @@ Status available：:heavy_check_mark: (Completed) | :hourglass_flowing_sand: (Wo
 
 | No.  |        Chapter Title        |          Status          |
 | :--: | :-------------------------: | :----------------------: |
-| Ch01 | [Chapter Title1](./Ch01.md) |    :heavy_check_mark:    |
-| Ch02 | [Chapter Title2](./Ch02.md) | :hourglass_flowing_sand: |
-| Ch03 | [Chapter Title3](./Ch03.md) |        :no_entry:        |
+| Ch01 | [Introduction to Elastic Stack](./Ch01.md) |    :no_entry:    |
+| Ch02 | [Installing Elasticsearch](./Ch02.md) | :no_entry: |
+| Ch03 | [Many as One – the Distributed Model](./Ch03.md) |        :no_entry:        |
+| Ch04 | [Prepping Your Data – Text Analysis and Mapping](./Ch04.md) |        :no_entry:        |
+| Ch05 | [Let's Do a Search!](./Ch05.md) |        :no_entry:        |
+| Ch06 | [Performance Tuning](./Ch06.md) |        :no_entry:        |
+| Ch07 | [Aggregating Datasets](./Ch07.md) |        :no_entry:        |
+| Ch08 | [Best Practices](./Ch08.md) |        :no_entry:        |
 
 
 
 Powershell script for generating markdown files in batch:
 
 ```powershell
-# Create 13 empty markdown files named Ch##.md:
-for($i=1; $i -le 13; $i=$i+1){ New-Item -Name "Ch$('{0:d2}' -f $i).md"; }
+# Create 8 empty markdown files named Ch##.md:
+for($i=1; $i -le 8; $i=$i+1){ New-Item -Name "Ch$('{0:d2}' -f $i).md"; }
 ```
 
  
